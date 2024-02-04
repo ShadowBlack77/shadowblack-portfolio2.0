@@ -1,0 +1,68 @@
+<section id="experience">
+  <div id="experience-content" #experienceElement [@experienceAnimation]="experienceAnimationState">
+    <div id="experience-desc">
+      <h3>Experience</h3>
+      <p>
+        I have been creating websites for over a year. I'm constantly learning new things to always be up to date with technology.
+      </p>
+    </div>
+   <div id="experience-gallery">
+    <div id="icons">
+      <div id="row-one">
+        <div (mouseenter)="showText($event, 1)" (mouseleave)="resetShowText(1)">
+          <img src="../../../assets/icons/html5.png" alt="html5">
+          <p class="technology-name" [class.show]="isShowedText(1)">HTML5</p>
+        </div>
+        <div (mouseenter)="showText($event, 2)" (mouseleave)="resetShowText(2)">
+          <img src="../../../assets/icons/css3.png" alt="css3">
+          <p class="technology-name" [class.show]="isShowedText(2)">CSS3</p>
+        </div>
+        <div (mouseenter)="showText($event, 3)" (mouseleave)="resetShowText(3)">
+          <img src="../../../assets/icons/sass.png" alt="sass">
+          <p class="technology-name" [class.show]="isShowedText(3)">Sass</p>
+        </div>
+        <div (mouseenter)="showText($event, 4)" (mouseleave)="resetShowText(4)">
+          <img src="../../../assets/icons/js.png" alt="js">
+          <p class="technology-name" [class.show]="isShowedText(4)">JavaScript</p>
+        </div>
+        <div (mouseenter)="showText($event, 5)" (mouseleave)="resetShowText(5)">
+          <img src="../../../assets/icons/tailwind.png" alt="js">
+          <p class="technology-name" [class.show]="isShowedText(5)">Tailwind</p>
+        </div>
+      </div>
+      <div id="row-two">
+        <div (mouseenter)="showText($event, 6)" (mouseleave)="resetShowText(6)">
+          <img src="../../../assets/icons/jquery.png" alt="jQuery">
+          <p class="technology-name" [class.show]="isShowedText(6)">jQuery</p>
+        </div>
+        <div (mouseenter)="showText($event, 7)" (mouseleave)="resetShowText(7)">
+          <img src="../../../assets/icons/angular.png" alt="angular">
+          <p class="technology-name" [class.show]="isShowedText(7)">Angular</p>
+        </div>
+        <div (mouseenter)="showText($event, 8)" (mouseleave)="resetShowText(8)">
+          <img src="../../../assets/icons/nodejs.png" alt="nodejs">
+          <p class="technology-name" [class.show]="isShowedText(8)">NodeJS</p>
+        </div>
+        <div (mouseenter)="showText($event, 9)" (mouseleave)="resetShowText(9)">
+          <img src="../../../assets/icons/mysql.png" alt="sql">
+          <p class="technology-name" [class.show]="isShowedText(9)">MySQL</p>
+        </div>
+        <div (mouseenter)="showText($event, 10)" (mouseleave)="resetShowText(10)">
+          <img src="../../../assets/icons/mongodb.png" alt="sql">
+          <p class="technology-name" [class.show]="isShowedText(10)">MongoDB</p>
+        </div>
+      </div>
+    </div>
+    <div id="more-experience">
+      <div id="more-experience-title">
+        <h2>More About Experience</h2>
+      </div>
+      <div id="more-experience-desc">
+        <p>
+          <b>Archman Navigaotr</b> - Working with the Archman Navigaotr to build applications for companies
+        </p>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>

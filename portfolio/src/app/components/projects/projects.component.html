@@ -1,0 +1,78 @@
+<section id="projects">
+  <div id="project-header">
+    <h2 #projectTitle [@projectTitleAnimation]="projectTitleState">Selected Projects</h2>
+  </div>
+  <div id="selected-projects">
+    <div class="project" #projectOne [@projectOneAnimation]="projectOneState">
+      <div class="project-description">
+        <div>
+          <h3>Projekt1</h3>
+        </div>
+        <div class="project-btns">
+          <a href="#">Website</a>
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" #projectTwo [@projectTwoAnimation]="projectTwoState">
+      <div class="project-description">
+        <div>
+          <h3>Projekt2</h3>
+        </div>
+        <div class="project-btns">
+          <a href="#">Website</a>
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" id="project-three" #projectThree [@projectThreeAnimation]="projectThreeState">
+      <div class="project-description">
+        <div>
+          <h3>Manage landing<br /> page</h3>
+        </div>
+        <div class="project-btns">
+          <a href="https://manage-landing-page-shadowblack77.netlify.app" target="_blank">Website</a>
+          <a href="https://github.com/ShadowBlack77/manage-landing-page" target="_blank">Code</a>
+        </div>
+      </div>
+    </div> 
+    <div class="project" id="project-four" #projectFour [@projectFourAnimation]="projectFourState">
+      <div class="project-description">
+        <div>
+          <h3>Multi-step form <br /> Angular</h3>
+        </div>
+        <div class="project-btns">
+          <a href="#">Website</a>
+          <a href="#">Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" id="project-five" #projectFive [@projectFiveAnimation]="projectFiveState">
+      <div class="project-description">
+        <div>
+          <h3>Rock Paper Scissors<br /> Master</h3>
+        </div>
+        <div class="project-btns">
+          <a href="https://rps-extended-shadowblack77.netlify.app" target="_blank">Website</a>
+          <a href="https://github.com/ShadowBlack77/rock-paper-scissors-FrontendMentor" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+    <div class="project" id="project-six" #projectSix [@projectSixAnimation]="projectSixState">
+      <div class="project-description">
+        <div>
+          <h3>Easy Bank</h3>
+        </div>
+        <div class="project-btns">
+          <a href="https://65ba82fb088606041e82ed94--keen-truffle-efcc6d.netlify.app" target="_blank">Website</a>
+          <a href="https://github.com/ShadowBlack77/easybank-landing-page-master" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects-btn">
+    <a href="https://github.com/ShadowBlack77" target="_blank">
+      More Projects here
+    </a>
+  </div>
+</section>

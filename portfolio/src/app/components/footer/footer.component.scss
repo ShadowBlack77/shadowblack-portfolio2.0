@@ -1,0 +1,27 @@
+footer {
+  height: 20vh;
+  background-color: #01161e;
+  color:  #e6e6fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  #footer-btns {
+    display: flex;
+    a {
+      background-color: #05212c;
+      color: #e6e6fa;
+      border: none;
+      font-size: 2em;
+      padding: 12px;
+      cursor: pointer;
+      margin: 0 6px;
+      transition: .4s;
+      display: block;
+    }
+    a:hover{
+      transform: scale(1.1);
+    }
+  }
+}

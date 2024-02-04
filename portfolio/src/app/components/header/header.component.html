@@ -1,0 +1,24 @@
+<header [@scrollAnimation]="animationState">
+  <div>
+    <a href="#explore-image">
+      <h1>ShadowBlack</h1>
+    </a>
+  </div>
+  <nav>
+    <a href="/#about-me"  [ngClass]="{'active-link': currentSection === 'about'}">About</a>
+    <a href="/#services"  [ngClass]="{'active-link': currentSection === 'services'}">Services</a>
+    <a href="/#experience"  [ngClass]="{'active-link': currentSection === 'experience'}" >Experience</a>
+    <a href="/#projects"  [ngClass]="{'active-link': currentSection === 'projects'}">Projects</a>
+    <a href="/#get-in-touch"  [ngClass]="{'active-link': currentSection === 'touch'}" >Contact</a>
+  </nav>
+  <div id="ham-menu-btn">
+    <button id="ham-menu" (click)="onHamBtnClick()">
+      <div>
+        <hr />
+        <hr />
+        <hr />
+      </div>
+    </button>
+  </div>
+</header>
+<app-hamburger-menu #hamburgerMenu [textInMenu]="isTextMenuShowed" [isMenuOpened]="isHamburgerMenuOpen" [currentSection]="currentSection" />

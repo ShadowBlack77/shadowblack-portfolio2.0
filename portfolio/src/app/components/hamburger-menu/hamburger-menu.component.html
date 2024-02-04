@@ -1,0 +1,13 @@
+<section id="hamburger-menu" [@hamburgerMenuAnimation]="isMenuOpened ? 'end' : 'start'">
+  <div id="hamburger-menu-title">
+    <h2 [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'">Menu</h2>
+  </div>
+  <nav>
+    <a [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'" routerLink="" href="/#explore-image" [ngClass]="{'active-link': currentSection === 'explore'}">Home</a>
+    <a [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'" routerLink="" href="/#about-me" [ngClass]="{'active-link': currentSection === 'about'}">About</a>
+    <a [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'" routerLink="" href="/#services" [ngClass]="{'active-link': currentSection === 'services'}">Services</a>
+    <a [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'" routerLink="" href="/#experience" [ngClass]="{'active-link': currentSection === 'experience'}" >Experience</a>
+    <a [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'" routerLink="" href="/#projects'" [ngClass]="{'active-link': currentSection === 'projects'}">Projects</a>
+    <a [@hamburgerMenuTextAnimation]="textInMenu ? 'end' : 'start'" routerLink="" href="/#get-in-touch" [ngClass]="{'active-link': currentSection === 'touch'}" >Contact</a>
+  </nav>
+</section>

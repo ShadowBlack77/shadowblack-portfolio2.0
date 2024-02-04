@@ -1,0 +1,208 @@
+#experience {
+  height: 80vh;
+  background-color: #01161e;
+  color: #e6e6fa;
+
+  #experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 48px;
+
+    #experience-desc {
+      width: 600px;
+      text-align: center;
+      h3 {
+        font-size: 3em;
+        font-weight: 400;
+        letter-spacing: 3px;
+      }
+      p{
+        font-size: 1.2em;
+      }
+    }
+  
+    #experience-gallery {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      #icons {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+        .technology-name {
+          font-size: 12px;
+          opacity: 0;
+          user-select: none;
+          transition: .4s;
+        }
+        .show {
+          opacity: 1;
+        }
+        #row-one{
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          text-align: center;
+          color: #e6e6fa;
+    
+          div {
+            img {
+              height: 60px;
+              filter: grayscale(100%);
+              transition: .4s;
+            }
+            img:hover {
+              filter: grayscale(0%);
+            }
+          }
+        }
+    
+        #row-two{
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          text-align: center;
+          color: #e6e6fa;
+          
+          div {
+            img {
+              height: 60px;
+              filter: grayscale(100%);
+              transition: .4s;
+            }
+            img:hover {
+              filter: grayscale(0%);
+            }
+          }
+        }
+      }
+      #more-experience {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        #more-experience-title {
+          margin-bottom: 48px;
+        }
+  
+        #more-experience-desc {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) { 
+  #experience {
+    #experience-content {
+      #experience-gallery {
+        #icons {
+          #row-one {
+            div {
+              img {
+                height: 50px;
+              }
+            }
+          }
+          #row-two {
+            div {
+              img {
+                height: 50px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  #experience{
+    height: auto;
+    #experience-content {
+      #experience-desc {
+        width: 100%;
+      }
+      #experience-gallery {
+        flex-direction: column;
+        #icons {
+          width: 100%;
+        }
+        #more-experience {
+          width: 100%;
+          #more-experience-desc {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+} 
+
+@media only screen and (max-width: 375px) {
+  #experience{
+    height: auto;
+    #experience-content {
+      #experience-desc {
+        width: 100%;
+      }
+      #experience-gallery {
+        flex-direction: column;
+        #icons {
+          width: 100%;
+
+          #row-one {
+            justify-content: space-around;
+            div{
+              img {
+                height: 40px;
+              }
+            }
+          }
+
+          #row-two {
+            justify-content: space-around;
+            div{
+              img {
+                height: 40px;
+              }
+            }
+          }
+        }
+        #more-experience {
+          width: 100%;
+          #more-experience-title {
+            width: 100%;
+            h2 {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+
+@media only screen and (max-width: 320px) {
+  #experience{
+    height: auto;
+    #experience-content {
+      #experience-desc {
+        width: 100%;
+        h3 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+} 

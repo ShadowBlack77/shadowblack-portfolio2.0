@@ -1,0 +1,35 @@
+#get-in-touch {
+  height: 20vh;
+  background-color: #124559;
+  color: #e6e6fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 0;
+
+  h3 {
+    font-weight: 400;
+    font-size: 2em;
+  }
+
+  a {
+    background-color: #01161e;
+    color: #e6e6fa;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: block;
+    transition: .4s;
+  }
+
+  a:hover {
+    background-color: #05212c;
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #get-in-touch {
+    text-align: center;
+  }
+}
