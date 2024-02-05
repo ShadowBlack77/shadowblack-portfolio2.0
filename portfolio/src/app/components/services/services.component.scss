@@ -1,6 +1,6 @@
 #services {
   background-color: #124559;
-  background-image: url(../../../assets/backgrounds/services.jpg);
+  background-image: url(../../../assets/backgrounds/services4.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -13,6 +13,7 @@
   .service{
     color:  #e6e6fa;
     backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, .6);
     height: 400px;
     width: 300px;
     display: flex;
