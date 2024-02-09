@@ -17,6 +17,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    #project-one {
+      background-image: url('../../../assets/projects/Project1.png');
+    }
+    #project-two {
+      background-image: url('../../../assets/projects/Project2.png');
+    }
     #project-three {
       background-image: url('../../../assets/projects/Project3.png');
     }
