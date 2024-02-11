@@ -4,7 +4,6 @@
   background-image: url(../../../assets/backgrounds/cv.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 
   #cv-content {
     backdrop-filter: blur(4px);
@@ -54,5 +53,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #cv  {
+    background-attachment: fixed;
   }
 }

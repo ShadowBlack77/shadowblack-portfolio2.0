@@ -37,8 +37,9 @@ export class ExperienceComponent {
     const isInViewport = 
       rect.top >= -800 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 300 &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 300 
+      // &&
+      // rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 
     if (isInViewport) {
       this.experienceAnimationState = 'end';

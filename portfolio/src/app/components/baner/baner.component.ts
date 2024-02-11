@@ -56,8 +56,10 @@ export class BanerComponent {
     const isInViewport = 
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
+    // &&
+    // rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
 
     if (isInViewport) {
       this.animationH2State = 'end';
@@ -71,8 +73,10 @@ export class BanerComponent {
     const isInViewport = 
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
+    // &&
+    // rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
 
     if (isInViewport) {
       this.animationPState = 'end';

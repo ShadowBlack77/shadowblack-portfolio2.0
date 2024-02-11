@@ -3,7 +3,6 @@
   background-image: url(../../../assets/backgrounds/services4.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   height: 90vh;
   display: flex;
   justify-content: space-around;
@@ -46,6 +45,7 @@
    }
 
    p{
+    padding: 8px 0;
     text-align: center;
    }
   }
@@ -68,8 +68,14 @@
     padding: 48px 0;
     height: auto;
     .service {
-      width: 250px;
+      width: 220px;
       margin: 12px 0;
     }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #services {
+    background-attachment: fixed;
   }
 }
